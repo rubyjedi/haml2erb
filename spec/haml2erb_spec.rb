@@ -39,7 +39,7 @@ haml = %q{
 
 erb = %q{<!DOCTYPE html>
 <html lang='en'>
-  <head <%= tag_options({"dynamic" => "#{attribute}"}, false) %>>
+  <head <%= raw tag_options({"dynamic" => "#{attribute}"}, false) %>>
     <% ciao %>
     <% if 3 %>
       <%= pippo %>
